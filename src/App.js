@@ -154,7 +154,7 @@ class App extends Component {
     app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
       .then(response => {
         if (response) {
-          fetch('https://polar-caverns-61829.herokuapp.com:3000/image', {
+          fetch('https://polar-caverns-61829.herokuapp.com/image', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
