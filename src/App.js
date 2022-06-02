@@ -184,13 +184,13 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state
     return (
       <div className="App">
-        {/* <Particles
+        <Particles
           className='particles'
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
           options={options}
-        /> */}
+        />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChage} />
         {route === 'home'
           ?
